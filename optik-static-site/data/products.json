@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Aero Sun Classic",
+    "brand": "Aero",
+    "price": "1.500 TL",
+    "category": "Güneş Gözlüğü",
+    "gender": "Unisex",
+    "image": "images/placeholder.svg"
+  },
+  {
+    "id": 2,
+    "name": "Vista Frame Black",
+    "brand": "Vista",
+    "price": "1.250 TL",
+    "category": "Optik Çerçeve",
+    "gender": "Erkek",
+    "image": "images/placeholder.svg"
+  },
+  {
+    "id": 3,
+    "name": "Lina Soft Rose",
+    "brand": "Lina",
+    "price": "1.350 TL",
+    "category": "Optik Çerçeve",
+    "gender": "Kadın",
+    "image": "images/placeholder.svg"
+  },
+  {
+    "id": 4,
+    "name": "Mini Kids Blue",
+    "brand": "Mini",
+    "price": "950 TL",
+    "category": "Çocuk",
+    "gender": "Unisex",
+    "image": "images/placeholder.svg"
+  }
+]
