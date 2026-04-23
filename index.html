@@ -263,7 +263,7 @@
 
     .hero {
       position: relative;
-      padding: 170px 0 110px;
+      padding: 138px 0 82px;
       overflow: hidden;
       background:
         radial-gradient(circle at 10% 10%, rgba(47,107,255,.14), transparent 30%),
@@ -297,7 +297,7 @@
     }
 
     .hero-title {
-      font-size: clamp(2.7rem, 5vw, 5.1rem);
+      font-size: clamp(2.35rem, 4.6vw, 5.1rem);
       line-height: 1.03;
       font-weight: 900;
       letter-spacing: -2px;
@@ -306,17 +306,17 @@
     }
 
     .hero-text {
-      font-size: 1.08rem;
+      font-size: 1.02rem;
       max-width: 680px;
       color: #5b6475;
-      margin-bottom: 28px;
+      margin-bottom: 22px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 28px;
+      gap: 12px;
+      margin-bottom: 22px;
     }
 
     .hero-note {
@@ -827,7 +827,7 @@
     .top-wa {
       position: fixed;
       right: 20px;
-      bottom: 100px;
+      bottom: 116px;
       width: 60px;
       height: 60px;
       border-radius: 50%;
@@ -998,8 +998,8 @@
       }
 
       .hero {
-        padding-top: 140px;
-        padding-bottom: 70px;
+        padding-top: 132px;
+        padding-bottom: 54px;
       }
 
       .hero-visual-wrap {
@@ -1031,14 +1031,32 @@
       }
 
       .top-wa {
-        bottom: 92px;
+        bottom: 96px;
         right: 16px;
       }
     }
 
     @media (max-width: 767.98px) {
       .hero-title {
-        letter-spacing: -1.2px;
+        letter-spacing: -1px;
+        font-size: 2.05rem;
+        line-height: 1.06;
+        margin-bottom: 14px;
+      }
+
+      .hero-text {
+        font-size: .96rem;
+        line-height: 1.65;
+        margin-bottom: 18px;
+      }
+
+      .hero-note {
+        gap: 10px;
+        font-size: .9rem;
+      }
+
+      .hero-note span:nth-child(3) {
+        display: none;
       }
 
       .hero-card {
@@ -1070,10 +1088,34 @@
         padding: 24px 16px;
       }
 
+      .eyebrow {
+        font-size: .8rem;
+        padding: 8px 12px;
+        gap: 8px;
+      }
+
       .top-wa {
-        width: 54px;
-        height: 54px;
-        font-size: 1.35rem;
+        display: none;
+      }
+
+      body {
+        padding-bottom: 92px;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+        padding: 13px 16px;
+        font-size: .95rem;
+      }
+
+      .hero-actions .btn-ghost {
+        grid-column: 1 / -1;
       }
     }
   </style>
@@ -1111,14 +1153,14 @@
       <div class="row align-items-center g-5">
         <div class="col-lg-6">
           <div class="reveal active">
-            <div class="eyebrow"><i class="fa-solid fa-location-dot"></i>Akdeniz ve Toroslar Bölgesine Uygun Hizmet</div>
+            <div class="eyebrow"><i class="fa-solid fa-location-dot"></i>Akdeniz & Toroslar</div>
             <h1 class="hero-title">Mersin'de <span class="text-gradient">gözlük seçimini</span> daha kolay, daha şık ve daha güvenli hale getiren anasayfa</h1>
             <p class="hero-text">Güneş gözlüğü, optik gözlük, günlük kullanıma uygun çerçeveler, cam değişimi ve farklı ihtiyaçlara hitap eden çözümlerle Mersin'de aradığınız gözlüğü daha rahat bulmanız için buradayız. Modern modeller, açıklayıcı içerikler ve hızlı iletişim ile karar vermeyi kolaylaştıran bir deneyim sunuyoruz.</p>
 
             <div class="hero-actions">
               <a href="tel:+905070777506" class="btn btn-main"><i class="fa-solid fa-phone"></i>Hemen Ara</a>
               <a href="https://wa.me/905070777506?text=Merhaba%2C%20g%C3%B6zl%C3%BCkler%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i>WhatsApp Yaz</a>
-              <a href="#kategoriler" class="btn btn-ghost"><i class="fa-solid fa-arrow-down"></i>Modellere Bak</a>
+              <a href="#kategoriler" class="btn btn-ghost d-none d-md-inline-flex"><i class="fa-solid fa-arrow-down"></i>Modellere Bak</a>
             </div>
 
             <div class="hero-note">
@@ -1867,10 +1909,6 @@
       </div>
     </div>
   </footer>
-
-  <a class="top-wa" href="https://wa.me/905070777506?text=Merhaba%2C%20bilgi%20almak%20istiyorum." target="_blank" aria-label="WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
 
   <div class="floating-callbar">
     <div class="d-grid gap-2" style="grid-template-columns: 1fr 1fr;">
